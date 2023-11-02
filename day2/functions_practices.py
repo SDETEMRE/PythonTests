@@ -38,17 +38,17 @@ numbers = (1, 2, 3, 4, 5, 6, 7)
 oddOrEven(numbers)
 
 word = ('Anna','Java')
-rev = (word[0][::-1])
+rev = (word[0][::-1]).lower()
 print(rev)
 
 def palindrome(tup : tuple):
 
     for x in range(0, len(tup)):
-
-        if tup[x] == (tup[x][::-1]):
+        rev = (tup[x][::-1]).lower()
+        if tup[x].lower() == rev:
             print(tup[x])
 
 
 
-words = ('Java', 'Anna', 'python', 'Cydeo', 'Level')
+words = ('Java', 'Anna', 'python', 'Cydeo', 'Level', 'Emme')
 palindrome(words)
