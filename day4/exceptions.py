@@ -31,4 +31,8 @@ except SyntaxError:
     print('it is a syntax error')
 except OSError:
     print('It is an operating system error')
+except ArithmeticError:
+    print('aritmethic error')
+finally:
+    print('finally block')
 
